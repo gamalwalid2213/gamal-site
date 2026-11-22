@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gamal Walid | Performance Media Buyer</title>
+<meta name="description" content="Gamal Walid, senior performance media buyer for e-commerce brands in Saudi Arabia, the Gulf and Egypt. Meta, TikTok, Google, Snapchat and LinkedIn Ads.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=JetBrains+Mono:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @property --a{syntax:"<angle>";initial-value:0deg;inherits:false}
+  :root{
+    --black:#000000;
+    --panel:#070B16;
+    --line:#1B2440;
+    --blue:#6A9BFF;
+    --blue-soft:#A9C4FF;
+    --blue-glow:rgba(106,155,255,.35);
+    --ice:#EEF2FF;
+    --steel:#9AA6C7;
+    --mono:"JetBrains Mono",ui-monospace,monospace;
+    --wrap:1180px;
+    --pad:clamp(20px,4vw,48px);
+    --ease:cubic-bezier(.2,.8,.2,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--black);color:var(--ice);font-family:"Archivo",system-ui,sans-serif;font-stretch:100%;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:inherit}
+  img{display:block;max-width:100%}
+  :focus-visible{outline:2px solid var(--blue-soft);outline-offset:3px;border-radius:2px}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--pad)}
+  .num{font-variant-numeric:tabular-nums}
+  .display{font-stretch:125%;font-weight:800;letter-spacing:-.02em;line-height:.95}
+  h2.section-title{font-stretch:125%;font-weight:750;font-size:clamp(30px,4.2vw,48px);line-height:1.05;letter-spacing:-.015em;margin-bottom:14px}
+  .lede{color:var(--steel);max-width:58ch;font-size:18px}
+  .grad{background:linear-gradient(90deg,var(--blue),#D6E3FF,var(--blue));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent}
+
+  /* Header */
+  header.top{position:sticky;top:0;z-index:20;background:rgba(0,0,0,.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
+  .mark{display:flex;align-items:center;gap:12px;text-decoration:none;font-stretch:125%;font-weight:800;font-size:17px;letter-spacing:-.01em}
+  .mark i{width:9px;height:9px;border-radius:50%;background:var(--blue);box-shadow:0 0 12px var(--blue-glow)}
+  nav.links{display:flex;gap:28px;font-size:15px}
+  nav.links a{text-decoration:none;color:var(--steel);position:relative;padding:4px 0}
+  nav.links a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:1px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
+  nav.links a:hover{color:var(--ice)}
+  nav.links a:hover::after{transform:scaleX(1)}
+
+  /* Buttons: light, outlined, no solid blue blocks */
+  .btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--mono);font-weight:500;font-size:14px;padding:13px 22px;border-radius:8px;border:1px solid var(--line);color:var(--ice);background:transparent;transition:border-color .25s,background .25s,box-shadow .25s,transform .25s var(--ease)}
+  .btn .arr{display:inline-block;transition:transform .3s var(--ease)}
+  .btn:hover .arr{transform:translateX(4px)}
+  .btn-primary{border-color:rgba(106,155,255,.55);background:rgba(106,155,255,.10);color:#DCE6FF}
+  .btn-primary::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(169,196,255,.35),transparent);transform:skewX(-20deg)}
+  .btn-primary:hover{background:rgba(106,155,255,.18);box-shadow:0 0 28px rgba(106,155,255,.28);border-color:var(--blue)}
+  .btn-ghost:hover{border-color:rgba(106,155,255,.55);background:rgba(106,155,255,.05)}
+  .btn-sm{padding:9px 16px;font-size:13px}
+
+  /* Hero */
+  .hero{position:relative;overflow:hidden;padding:clamp(56px,9vw,110px) 0 0}
+  .hero::before{content:"";position:absolute;width:820px;height:820px;right:-240px;top:-280px;border-radius:50%;background:radial-gradient(circle,rgba(106,155,255,.20),rgba(106,155,255,0) 62%);pointer-events:none}
+  .hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(420px circle at var(--mx,70%) var(--my,30%),rgba(106,155,255,.10),transparent 60%);transition:background .2s}
+  .hero .wrap{position:relative;z-index:1}
+  .hero-grid{display:grid;grid-template-columns:1fr 300px;gap:clamp(32px,6vw,80px);align-items:end}
+  .hero h1{font-size:clamp(52px,10vw,128px);background:linear-gradient(100deg,var(--ice) 42%,var(--blue-soft) 50%,var(--ice) 58%);background-size:260% 100%;background-position:100% 0;-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero .role{font-stretch:110%;font-weight:600;font-size:clamp(19px,2.2vw,24px);margin-top:22px}
+  .hero .intro{color:var(--steel);max-width:54ch;margin-top:14px;font-size:18px}
+  .hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+  .avail{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:13px;color:var(--steel);margin-bottom:26px}
+  .avail i{width:8px;height:8px;border-radius:50%;background:#3DDC84}
+
+  .portrait{position:relative;aspect-ratio:1/1;border-radius:20px;padding:1.5px;background:conic-gradient(from var(--a),transparent 0deg,var(--blue) 60deg,transparent 140deg,transparent 220deg,var(--blue-soft) 290deg,transparent 360deg)}
+  .portrait .frame{position:relative;width:100%;height:100%;border-radius:19px;overflow:hidden;background:radial-gradient(circle at 30% 20%,#0E1730,#03050B 70%)}
+  .portrait img{width:100%;height:100%;object-fit:cover}
+  .portrait .initials{position:absolute;inset:0;display:none;place-items:center;font-stretch:125%;font-weight:800;font-size:96px;letter-spacing:-.03em}
+  .portrait.no-photo .initials{display:grid}
+  .portrait.no-photo img{display:none}
+
+  /* Flow stats (replaces bars) */
+  .flow{display:grid;grid-template-columns:auto 1fr auto auto;align-items:end;gap:clamp(16px,3vw,36px)}
+  .stat .k{display:block;font-family:var(--mono);font-size:12px;color:var(--steel);letter-spacing:.02em;margin-bottom:6px}
+  .stat .v{display:block;font-stretch:125%;font-weight:800;font-size:clamp(24px,3vw,34px);line-height:1.05;letter-spacing:-.015em;white-space:nowrap}
+  .stat.ret{padding-left:clamp(16px,3vw,36px);border-left:1px solid var(--line)}
+  .stat.ret .v{color:var(--blue-soft)}
+  .flow-line{position:relative;height:2px;margin-bottom:16px;background:var(--line);border-radius:2px;overflow:visible}
+  .flow-line::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(106,155,255,.15),var(--blue));border-radius:2px;transform-origin:left}
+  .flow-line i{position:absolute;top:50%;left:0;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:var(--blue-soft);box-shadow:0 0 14px 3px var(--blue-glow);opacity:0}
+  .flow-line::after{content:"";position:absolute;right:-2px;top:50%;width:8px;height:8px;margin-top:-4px;border-top:2px solid var(--blue);border-right:2px solid var(--blue);transform:rotate(45deg)}
+
+  .signature{margin-top:clamp(56px,8vw,96px);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:34px 0 38px}
+  .signature figcaption{color:var(--steel);font-size:15px;margin-bottom:26px}
+  .signature figcaption strong{color:var(--ice);font-weight:600}
+  .signature .stat .v{font-size:clamp(30px,4.6vw,56px)}
+
+  .facts{display:grid;grid-template-columns:repeat(4,1fr);padding:34px 0 30px}
+  .facts div{padding-right:20px}
+  .facts div+div{border-left:1px solid var(--line);padding-left:24px}
+  .facts dt{font-stretch:125%;font-weight:800;font-size:clamp(26px,3vw,36px);line-height:1.1}
+  .facts dd{color:var(--steel);font-size:14px;margin-top:4px}
+
+  .marquee{position:relative;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;margin-bottom:clamp(64px,9vw,110px);-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+  .marquee .track{display:flex;width:max-content;gap:48px}
+  .marquee span{font-family:var(--mono);font-size:14px;color:var(--steel);white-space:nowrap;display:flex;align-items:center;gap:48px}
+  .marquee span::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--blue);opacity:.7}
+
+  /* Work */
+  section.work{padding:clamp(64px,9vw,110px) 0;border-top:1px solid var(--line)}
+  .case{display:grid;grid-template-columns:280px 1fr;gap:clamp(24px,5vw,64px);padding:52px 0;border-top:1px solid var(--line)}
+  .case:first-of-type{margin-top:40px}
+  .case>div,.hero-grid>div,.contact-grid>*{min-width:0}
+  .flow .stat{min-width:0}
+  .case h3{display:flex;align-items:center;gap:12px;font-stretch:120%;font-weight:750;font-size:26px;line-height:1.1;letter-spacing:-.01em}
+  .case h3::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--blue);box-shadow:0 0 12px var(--blue-glow)}
+  .case .meta{margin-top:16px;display:grid;gap:6px;font-size:14px;color:var(--steel)}
+  .case .meta span b{color:var(--ice);font-weight:600}
+  .case .summary{font-size:18px;max-width:60ch;margin-bottom:26px}
+  .case .stat .v{font-size:clamp(22px,2.4vw,28px)}
+
+  /* Screenshots: blurred until clicked */
+  .shots{display:grid;gap:16px;margin-top:30px}
+  .shot{all:unset;box-sizing:border-box;cursor:pointer;display:block;border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow:hidden;transition:border-color .3s,box-shadow .3s,transform .3s var(--ease)}
+  .shot:hover{border-color:rgba(106,155,255,.5);box-shadow:0 10px 40px -18px var(--blue-glow);transform:translateY(-3px)}
+  .shot:focus-visible{outline:2px solid var(--blue-soft);outline-offset:3px}
+  .shot .pic{position:relative;display:block;overflow:hidden;background:#fff;min-height:120px;max-height:150px;contain:paint;transition:max-height .7s var(--ease)}
+  .shot.open .pic{max-height:900px}
+  .shot img{display:block;width:100%;height:auto;filter:blur(16px) saturate(.5);transform:scale(1.06);transition:filter .6s var(--ease),transform .6s var(--ease)}
+  .shot.open img{filter:none;transform:none}
+  .shot .veil{position:absolute;inset:0;display:grid;place-items:center;background:rgba(3,6,14,.35);transition:opacity .4s}
+  .shot .veil b{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-weight:500;font-size:13px;color:var(--ice);padding:10px 16px;border-radius:999px;background:rgba(5,9,20,.75);border:1px solid rgba(106,155,255,.45);backdrop-filter:blur(4px)}
+  .shot .veil svg{width:16px;height:16px;stroke:var(--blue-soft)}
+  .shot.open .veil{opacity:0;pointer-events:none}
+  .shot .cap{display:flex;justify-content:space-between;gap:12px;padding:12px 16px;font-size:13px;color:var(--steel)}
+  .shot .cap em{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--blue-soft)}
+
+
+  /* Per-platform table */
+  .tbl-wrap{margin-top:28px;border:1px solid var(--line);border-radius:12px;overflow-x:auto;background:var(--panel)}
+  table.plat{width:100%;border-collapse:collapse;font-size:14px;min-width:520px}
+  table.plat th,table.plat td{padding:12px 16px;text-align:right;white-space:nowrap}
+  table.plat th:first-child,table.plat td:nth-child(2){text-align:left}
+  table.plat thead th{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--steel);border-bottom:1px solid var(--line)}
+  table.plat thead th:nth-child(2){text-align:left}
+  table.plat tbody tr+tr th,table.plat tbody tr+tr td{border-top:1px solid var(--line)}
+  table.plat tbody th{font-weight:600;color:var(--ice)}
+  table.plat td{color:var(--steel)}
+  table.plat td small{display:block;font-size:11px;color:#6E7A9C;margin-top:2px;font-family:var(--mono)}
+  table.plat td.roas{color:var(--blue-soft);font-weight:600}
+  table.plat tbody tr{transition:background .25s}
+  table.plat tbody tr:hover{background:rgba(106,155,255,.06)}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:10px;vertical-align:middle}
+  .dot.g{background:#6A9BFF}.dot.t{background:#C7D8FF}.dot.s{background:#A9C4FF;box-shadow:0 0 0 2px rgba(106,155,255,.25)}
+
+  details{margin-top:24px;border-top:1px solid var(--line)}
+  summary{cursor:pointer;list-style:none;padding:14px 0;font-weight:600;font-size:15px;display:flex;align-items:center;gap:10px}
+  summary::-webkit-details-marker{display:none}
+  summary .plus{width:18px;height:18px;position:relative;flex:none}
+  summary .plus::before,summary .plus::after{content:"";position:absolute;background:var(--blue-soft);left:50%;top:50%;transform:translate(-50%,-50%)}
+  summary .plus::before{width:14px;height:1.5px}
+  summary .plus::after{width:1.5px;height:14px;transition:transform .3s var(--ease)}
+  details[open] summary .plus::after{transform:translate(-50%,-50%) scaleY(0)}
+  details ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:8px 28px;padding-bottom:6px}
+  details li{position:relative;padding-left:18px;font-size:15px;color:var(--steel)}
+  details li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:1px;background:var(--blue)}
+  details[open] li{animation:rise .5s var(--ease) both}
+  details[open] li:nth-child(2){animation-delay:.05s}details[open] li:nth-child(3){animation-delay:.1s}details[open] li:nth-child(4){animation-delay:.15s}details[open] li:nth-child(5){animation-delay:.2s}details[open] li:nth-child(6){animation-delay:.25s}
+
+  /* Experience */
+  section.exp{padding:clamp(64px,9vw,110px) 0;border-top:1px solid var(--line)}
+  .timeline{margin-top:44px}
+  .job{display:grid;grid-template-columns:220px 1fr;gap:clamp(20px,5vw,64px);padding:0 0 44px}
+  .job .when{font-size:14px;color:var(--steel);padding-top:6px}
+  .job .when b{display:block;color:var(--ice);font-weight:600;font-size:15px}
+  .job .body{border-left:1px solid var(--line);padding-left:32px;position:relative}
+  .job .body::before{content:"";position:absolute;left:-6px;top:10px;width:11px;height:11px;border-radius:50%;background:var(--black);border:1.5px solid var(--blue)}
+  .job:first-child .body::before{background:var(--blue);box-shadow:0 0 0 0 var(--blue-glow)}
+  .job h3{font-stretch:115%;font-weight:700;font-size:22px;line-height:1.25}
+  .job .co{color:var(--blue-soft);font-size:15px;margin-top:2px}
+  .job ul{margin-top:14px;display:grid;gap:8px;list-style:none}
+  .job li{color:var(--steel);max-width:68ch;padding-left:18px;position:relative}
+  .job li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:1px;background:var(--blue)}
+
+  /* Skills */
+  section.skills{padding:0 0 clamp(64px,9vw,110px)}
+  .skill-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:40px;border-top:1px solid var(--line)}
+  .skill-grid>div{padding:26px 24px 26px 0}
+  .skill-grid>div+div{padding-left:24px;border-left:1px solid var(--line)}
+  .skill-grid h3{font-stretch:115%;font-weight:700;font-size:17px;margin-bottom:12px}
+  .skill-grid ul{list-style:none;display:grid;gap:6px;font-size:15px;color:var(--steel)}
+  .skill-grid li{transition:color .2s,transform .3s var(--ease)}
+  .skill-grid li:hover{color:var(--blue-soft);transform:translateX(4px)}
+  .creds{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px}
+  .cred{position:relative;background:var(--panel);padding:24px 26px;border-radius:12px;border:1px solid var(--line);overflow:hidden}
+  .cred::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,var(--blue),transparent)}
+  .cred h3{font-family:var(--mono);font-size:12px;font-weight:500;color:var(--blue-soft);margin-bottom:10px;text-transform:uppercase;letter-spacing:.12em}
+  .cred p{font-size:16px}
+  .cred p+p{margin-top:6px;color:var(--steel);font-size:14px}
+
+  /* Contact (two-column, list on the right) */
+  section.contact{position:relative;overflow:hidden;padding:clamp(72px,10vw,120px) 0;border-top:1px solid var(--line);background:linear-gradient(180deg,#000 0%,#04060D 100%)}
+  section.contact::before{content:"";position:absolute;left:-200px;bottom:-320px;width:720px;height:720px;border-radius:50%;background:radial-gradient(circle,rgba(106,155,255,.14),transparent 62%);pointer-events:none}
+  .contact-grid{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(40px,7vw,100px);align-items:start}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--blue-soft);margin-bottom:18px}
+  .eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--blue)}
+  .contact h2{font-stretch:112%;font-weight:750;font-size:clamp(32px,4vw,46px);line-height:1.1;letter-spacing:-.015em}
+  .contact .lede{margin-top:18px;font-size:17px}
+  .contact .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}
+  .contact-list{border-bottom:1px solid var(--line)}
+  .contact-list .row{position:relative;display:flex;justify-content:space-between;align-items:baseline;gap:24px;padding:20px 4px}
+  .contact-list .row::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--line);transform-origin:left}
+  .contact-list .row::after{content:"";position:absolute;left:0;top:0;height:1px;width:100%;background:linear-gradient(90deg,var(--blue),transparent);transform:scaleX(0);transform-origin:left;transition:transform .5s var(--ease)}
+  .contact-list .row:hover::after{transform:scaleX(1)}
+  .contact-list dt{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--steel);transition:color .25s}
+  .contact-list .row:hover dt{color:var(--blue-soft)}
+  .contact-list dd{text-align:right;font-size:16px;transition:transform .35s var(--ease)}
+  .contact-list .row:hover dd{transform:translateX(-4px)}
+  .contact-list a{text-decoration:none}
+  .contact-list a:hover{color:var(--blue-soft)}
+
+  footer{padding:28px 0;font-size:14px;color:var(--steel);border-top:1px solid var(--line)}
+  footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  footer a{text-decoration:none}
+  footer a:hover{color:var(--blue-soft)}
+
+
+  /* Language switch */
+  .top-actions{display:flex;align-items:center;gap:12px}
+  .lang{all:unset;cursor:pointer;position:relative;display:inline-flex;padding:3px;border:1px solid var(--line);border-radius:999px;font-family:var(--mono);font-size:12px}
+  .lang-opt{position:relative;z-index:1;padding:5px 11px;border-radius:999px;color:var(--steel);transition:color .3s}
+  .lang-opt[data-l="ar"]{font-family:"IBM Plex Sans Arabic",sans-serif;font-size:13px;line-height:1.2}
+  .lang::before{content:"";position:absolute;top:3px;bottom:3px;left:3px;width:calc(50% - 3px);border-radius:999px;background:rgba(106,155,255,.16);border:1px solid rgba(106,155,255,.5);transition:transform .45s var(--ease)}
+  html[lang="ar"] .lang::before{transform:translateX(100%)}
+  html[lang="en"] .lang-opt[data-l="en"],html[lang="ar"] .lang-opt[data-l="ar"]{color:var(--ice)}
+  .lang:hover{border-color:rgba(106,155,255,.5)}
+  .lang:focus-visible{outline:2px solid var(--blue-soft);outline-offset:3px}
+  body.switching main{animation:langfade .5s var(--ease)}
+  @keyframes langfade{from{opacity:.25;filter:blur(3px)}to{opacity:1;filter:none}}
+
+  /* Arabic / RTL */
+  html[lang="ar"] body{font-family:"IBM Plex Sans Arabic","Archivo",sans-serif}
+  html[lang="ar"] .display,html[lang="ar"] h2.section-title,html[lang="ar"] .case h3,html[lang="ar"] .job h3,html[lang="ar"] .skill-grid h3,html[lang="ar"] .contact h2,html[lang="ar"] .mark,html[lang="ar"] .hero .role{font-family:"IBM Plex Sans Arabic","Archivo",sans-serif;letter-spacing:0;font-weight:700}
+  html[lang="ar"] .hero h1{line-height:1.15}
+  html[lang="ar"] .stat .k,html[lang="ar"] .eyebrow,html[lang="ar"] .contact-list dt,html[lang="ar"] .cred h3,html[lang="ar"] table.plat thead th,html[lang="ar"] .avail,html[lang="ar"] .btn,html[lang="ar"] .shot .veil b,html[lang="ar"] .shot .cap em{font-family:"IBM Plex Sans Arabic",var(--mono);letter-spacing:0;text-transform:none}
+  html[lang="ar"] .eyebrow,html[lang="ar"] .contact-list dt,html[lang="ar"] .cred h3{font-size:13px}
+  html[lang="ar"] .facts dt{font-size:clamp(22px,2.4vw,30px);line-height:1.25}
+  [dir="rtl"] .flow-line{transform:scaleX(-1)}
+  [dir="rtl"] .stat.ret{padding-left:0;border-left:none;padding-right:clamp(16px,3vw,36px);border-right:1px solid var(--line)}
+  [dir="rtl"] .facts div{padding-right:0;padding-left:20px}
+  [dir="rtl"] .facts div+div{border-left:none;padding-left:20px;border-right:1px solid var(--line);padding-right:24px}
+  [dir="rtl"] .job .body{border-left:none;border-right:1px solid var(--line);padding-left:0;padding-right:32px}
+  [dir="rtl"] .job .body::before{left:auto;right:-6px}
+  [dir="rtl"] .job li,[dir="rtl"] details li{padding-left:0;padding-right:18px}
+  [dir="rtl"] .job li::before,[dir="rtl"] details li::before{left:auto;right:0}
+  [dir="rtl"] .skill-grid>div{padding:26px 0 26px 24px}
+  [dir="rtl"] .skill-grid>div+div{padding-left:24px;padding-right:24px;border-left:none;border-right:1px solid var(--line)}
+  [dir="rtl"] .skill-grid li:hover{transform:translateX(-4px)}
+  [dir="rtl"] .contact-list dd{text-align:left}
+  [dir="rtl"] .contact-list .row:hover dd{transform:translateX(4px)}
+  [dir="rtl"] .contact-list .row::before,[dir="rtl"] .contact-list .row::after{transform-origin:right}
+  [dir="rtl"] .contact-list .row::after{background:linear-gradient(270deg,var(--blue),transparent)}
+  [dir="rtl"] table.plat th,[dir="rtl"] table.plat td{text-align:left}
+  [dir="rtl"] table.plat th:first-child,[dir="rtl"] table.plat td:nth-child(2),[dir="rtl"] table.plat thead th:nth-child(2){text-align:right}
+  [dir="rtl"] .dot{margin-right:0;margin-left:10px}
+  [dir="rtl"] .btn .arr{transform:scaleX(-1)}
+  [dir="rtl"] .btn:hover .arr{transform:scaleX(-1) translateX(4px)}
+  [dir="rtl"] nav.links a::after{transform-origin:right}
+  .marquee{direction:ltr}
+  .stat .v,.facts dt.num:not([data-prefix-ar]),table.plat td.num,.contact-list a.num{direction:ltr;unicode-bidi:isolate}
+  [dir="rtl"] .stat .v,[dir="rtl"] .facts dt{text-align:right}
+  [dir="rtl"] table.plat td.num{text-align:left}
+  .num,.contact-list a{unicode-bidi:isolate}
+  @media (max-width:960px){
+    [dir="rtl"] .facts div:nth-child(3){border-right:none;padding-right:0}
+    [dir="rtl"] .skill-grid>div:nth-child(3){border-right:none;padding-right:0}
+  }
+  @media (max-width:720px){
+    [dir="rtl"] .stat.ret{padding-right:0;border-right:none}
+    [dir="rtl"] .job .body{padding-right:24px}
+    [dir="rtl"] .contact-list dd{text-align:right}
+  }
+  @media (max-width:520px){
+    [dir="rtl"] .facts div+div{border-right:none;padding-right:0}
+    [dir="rtl"] .skill-grid>div+div{border-right:none;padding-right:0}
+  }
+
+  /* ---------- Motion ---------- */
+  @keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:no-preference){
+    .hero::before{animation:drift 16s ease-in-out infinite alternate}
+    @keyframes drift{0%{transform:translate(0,0) scale(1)}50%{transform:translate(-140px,90px) scale(1.15)}100%{transform:translate(-40px,180px) scale(.95)}}
+    .hero .avail,.hero h1,.hero .role,.hero .intro,.hero .actions,.portrait{animation:rise .9s var(--ease) both}
+    .hero h1{animation:rise .9s .08s var(--ease) both,sweep 7s 1.2s ease-in-out infinite}
+    @keyframes sweep{0%{background-position:100% 0}35%,100%{background-position:0% 0}}
+    .hero .role{animation-delay:.2s}.hero .intro{animation-delay:.3s}.hero .actions{animation-delay:.4s}.portrait{animation-delay:.25s}
+    .portrait{animation:rise .9s .25s var(--ease) both,spin 6s linear infinite}
+    @keyframes spin{to{--a:360deg}}
+    .avail i,.eyebrow i,.mark i{animation:ping 2.2s ease-out infinite}
+    @keyframes ping{0%{box-shadow:0 0 0 0 rgba(106,155,255,.6)}100%{box-shadow:0 0 0 9px rgba(106,155,255,0)}}
+    .avail i{animation-name:pingg}
+    @keyframes pingg{0%{box-shadow:0 0 0 0 rgba(61,220,132,.55)}100%{box-shadow:0 0 0 9px rgba(61,220,132,0)}}
+    .job:first-child .body::before{animation:ping 2.2s ease-out infinite}
+    .grad{animation:shine 5s linear infinite}
+    @keyframes shine{to{background-position:-200% 0}}
+    .btn-primary::after{animation:glint 3.8s 1.5s ease-in-out infinite}
+    @keyframes glint{0%{left:-60%}35%,100%{left:130%}}
+    .btn:hover{transform:translateY(-2px)}
+    .marquee .track{animation:marq 34s linear infinite}
+    .marquee:hover .track{animation-play-state:paused}
+    @keyframes marq{to{transform:translateX(-50%)}}
+    section.contact::before{animation:breathe 8s ease-in-out infinite alternate}
+    @keyframes breathe{from{transform:scale(.9) translate(0,0);opacity:.7}to{transform:scale(1.12) translate(80px,-40px);opacity:1}}
+
+    /* flow line: draws in, then a light travels along it */
+    .js .flow-line::before{transform:scaleX(0);transition:transform 1.3s .2s var(--ease)}
+    .js .in .flow-line::before,.js .signature .flow-line::before{transform:scaleX(1)}
+    .js .in .flow-line i,.signature .flow-line i{animation:travel 2.6s 1.4s ease-in-out infinite}
+    @keyframes travel{0%{left:0;opacity:0}12%{opacity:1}88%{opacity:1}100%{left:calc(100% - 8px);opacity:0}}
+
+    /* scroll reveal */
+    .js .reveal{opacity:0;transform:translateY(30px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
+    .js .reveal.in{opacity:1;transform:none}
+    .js .stagger>*{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+    .js .stagger.in>*{opacity:1;transform:none}
+    .js .stagger.in>*:nth-child(2){transition-delay:.08s}.js .stagger.in>*:nth-child(3){transition-delay:.16s}.js .stagger.in>*:nth-child(4){transition-delay:.24s}.js .stagger.in>*:nth-child(5){transition-delay:.32s}
+    .js .contact-list .row::before{transform:scaleX(0);transition:transform .9s var(--ease)}
+    .js .contact-list.in .row::before{transform:scaleX(1)}
+    .js .contact-list.in .row:nth-child(2)::before{transition-delay:.1s}.js .contact-list.in .row:nth-child(3)::before{transition-delay:.2s}.js .contact-list.in .row:nth-child(4)::before{transition-delay:.3s}
+  }
+
+  /* Responsive */
+  @media (max-width:960px){
+    .hero-grid{grid-template-columns:1fr}
+    .portrait{width:220px;order:-1}
+    .facts{grid-template-columns:1fr 1fr;row-gap:26px}
+    .facts div:nth-child(3){border-left:none;padding-left:0}
+    .case{grid-template-columns:1fr}
+    .skill-grid{grid-template-columns:1fr 1fr}
+    .skill-grid>div:nth-child(3){border-left:none;padding-left:0}
+    .skill-grid>div:nth-child(n+3){border-top:1px solid var(--line)}
+    .creds{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:720px){
+    nav.links{display:none}
+    .flow{grid-template-columns:1fr 1fr;row-gap:18px}
+    .flow-line{display:none}
+    .stat.ret{grid-column:1/-1;padding-left:0;border-left:none;border-top:1px solid var(--line);padding-top:14px}
+    .job{grid-template-columns:1fr;gap:8px}
+    .job .body{padding-left:24px}
+    details ul{grid-template-columns:1fr}
+    .contact-list .row{flex-direction:column;gap:4px}
+    .contact-list dd{text-align:left}
+  }
+  @media (max-width:520px){
+    body{font-size:16px}
+    .facts{grid-template-columns:1fr}
+    .facts div+div{border-left:none;padding-left:0;border-top:1px solid var(--line);padding-top:18px}
+    .skill-grid{grid-template-columns:1fr}
+    .skill-grid>div+div{border-left:none;padding-left:0;border-top:1px solid var(--line)}
+    .top .btn-sm{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Gamal Walid, back to top"><i aria-hidden="true"></i>Gamal Walid</a>
+    <nav class="links" aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="top-actions">
+      <button class="lang" id="lang" type="button" aria-label="التبديل إلى العربية"><span class="lang-opt" data-l="en">EN</span><span class="lang-opt" data-l="ar">عربي</span></button>
+      <a class="btn btn-primary btn-sm" href="#contact">Work with Gamal</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" id="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="avail"><i aria-hidden="true"></i>Open to remote and GCC roles</p>
+          <h1 class="display">Gamal<br>Walid</h1>
+          <p class="role">Senior Performance Media Buyer, E-commerce</p>
+          <p class="intro">I plan, launch and scale paid campaigns on Meta, TikTok, Google, Snapchat and LinkedIn for brands in Saudi Arabia, the Gulf and Egypt, with the tracking set up properly so every riyal and pound can be measured.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#work">See results <span class="arr" aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <!-- Profile photo: replace src with a local file (e.g. img/gamal.jpg) when hosting. If it fails to load, the initials show instead. -->
+        <div class="portrait" id="portrait">
+          <div class="frame">
+            <img src="https://static.wixstatic.com/media/23dba6_3fe9c359e68942c2b4b6a13b601ba5cd~mv2.jpg/v1/crop/x_0,y_280,w_720,h_720/fill/w_600,h_600,al_c,q_85/gamal.jpg" alt="Portrait of Gamal Walid" width="600" height="600" onerror="document.getElementById('portrait').classList.add('no-photo')">
+            <span class="initials grad" aria-hidden="true">GW</span>
+          </div>
+        </div>
+      </div>
+
+      <figure class="signature">
+        <figcaption><strong>Namaa Charity, Saudi Arabia.</strong> Google Ads, TikTok and Snapchat combined, March and May 2026.</figcaption>
+        <div class="flow">
+          <div class="stat"><span class="k">Total spend</span><span class="v num" data-to="1.82" data-dec="2" data-prefix="SAR " data-suffix="M">SAR 1.82M</span></div>
+          <div class="flow-line" aria-hidden="true"><i></i></div>
+          <div class="stat"><span class="k">Donations raised</span><span class="v num grad" data-to="14.26" data-dec="2" data-prefix="SAR " data-suffix="M">SAR 14.26M</span></div>
+          <div class="stat ret"><span class="k">Combined ROAS</span><span class="v num" data-to="7.83" data-dec="2" data-suffix="×">7.83×</span></div>
+        </div>
+      </figure>
+
+      <dl class="facts stagger reveal-trigger">
+        <div><dt class="num" data-to="3" data-suffix="+ years" data-prefix-ar="أكثر من " data-suffix-ar=" سنوات">3+ years</dt><dd>running paid media, 2 to 3 of them in e-commerce</dd></div>
+        <div><dt class="num" data-to="20" data-suffix="+">20+</dt><dd>client accounts managed at once</dd></div>
+        <div><dt class="num" data-to="50" data-prefix="$" data-suffix="K+">$50K+</dt><dd>monthly ad spend overseen across accounts</dd></div>
+        <div><dt class="num" data-to="5">5</dt><dd>ad platforms, from Meta and TikTok to LinkedIn</dd></div>
+      </dl>
+    </div>
+
+    <div class="marquee" aria-label="Platforms and tools">
+      <div class="track">
+        <span>Meta Ads</span><span>TikTok Ads</span><span>Google Ads</span><span>Snapchat Ads</span><span>LinkedIn Ads</span><span>Performance Max</span><span>GA4</span><span>Google Tag Manager</span><span>Conversions API</span><span>WhatsApp funnels</span>
+        <span aria-hidden="true">Meta Ads</span><span aria-hidden="true">TikTok Ads</span><span aria-hidden="true">Google Ads</span><span aria-hidden="true">Snapchat Ads</span><span aria-hidden="true">LinkedIn Ads</span><span aria-hidden="true">Performance Max</span><span aria-hidden="true">GA4</span><span aria-hidden="true">Google Tag Manager</span><span aria-hidden="true">Conversions API</span><span aria-hidden="true">WhatsApp funnels</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="wrap">
+      <h2 class="section-title reveal">Selected work</h2>
+      <p class="lede reveal">Four brands across charity, fashion, fragrance and footwear. The numbers on each brand are the totals of its screenshots, with the ROAS for each platform exactly as the platform reports it. Google Ads and TikTok report in Saudi riyals and Snapchat in US dollars; totals are in riyals, with dollars converted at the fixed rate of 3.75 SAR. Click a screenshot to see it, and click again to blur it.</p>
+
+      <article class="case reveal">
+        <div>
+          <h3>Namaa Charity</h3>
+          <div class="meta"><span><b>Market</b> Saudi Arabia</span><span><b>Sector</b> Nonprofit donations</span><span><b>Channels</b> Google Ads, TikTok, Snapchat</span><span><b>Period</b> March and May 2026</span></div>
+        </div>
+        <div>
+          <p class="summary">Donation campaigns for a Saudi charity through Ramadan, Zakat al-Fitr and Eid al-Adha. The account was rebuilt by donation type, and budget moved weekly toward the campaigns bringing in the most donations.</p>
+          <div class="flow">
+            <div class="stat"><span class="k">Total spend</span><span class="v num" data-to="1.82" data-dec="2" data-prefix="SAR " data-suffix="M">SAR 1.82M</span></div>
+            <div class="flow-line" aria-hidden="true"><i></i></div>
+            <div class="stat"><span class="k">Total donations</span><span class="v num grad" data-to="14.26" data-dec="2" data-prefix="SAR " data-suffix="M">SAR 14.26M</span></div>
+            <div class="stat ret"><span class="k">Combined ROAS</span><span class="v num" data-to="7.83" data-dec="2" data-suffix="×">7.83×</span></div>
+          </div>
+          <div class="tbl-wrap"><table class="plat"><thead><tr><th scope="col">Platform</th><th scope="col">Month</th><th scope="col">Spend</th><th scope="col">Donations</th><th scope="col">ROAS</th></tr></thead><tbody><tr><th scope="row"><i class="dot g" aria-hidden="true"></i>Google Ads</th><td>Mar 2026</td><td class="num">SAR 1.38M</td><td class="num">SAR 8.66M</td><td class="num roas">625.92%</td></tr><tr><th scope="row"><i class="dot t" aria-hidden="true"></i>TikTok Ads</th><td>Mar 2026</td><td class="num">SAR 182,042.38</td><td class="num">SAR 2,270,545.00</td><td class="num roas">12.47</td></tr><tr><th scope="row"><i class="dot s" aria-hidden="true"></i>Snapchat Ads</th><td>May 2026</td><td class="num">$68,675.24<small>≈ SAR 257,532.15</small></td><td class="num">$886,749.01<small>≈ SAR 3,325,308.79</small></td><td class="num roas">12.91</td></tr></tbody></table></div>
+          <div class="shots">
+            <button class="shot" type="button" aria-pressed="false"><span class="pic"><img src="shots/namaa-google-mar26.png" width="1046" height="248" decoding="async" alt="Google Ads results for Namaa Charity, March 2026"><span class="veil"><b><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>Click to view</b></span></span><span class="cap"><span>Google Ads, Mar 2026</span><em>Blurred</em></span></button><button class="shot" type="button" aria-pressed="false"><span class="pic"><img src="shots/namaa-tiktok-mar26.png" width="1548" height="832" decoding="async" alt="TikTok Ads campaign table for Namaa Charity, March 2026"><span class="veil"><b><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>Click to view</b></span></span><span class="cap"><span>TikTok Ads, Mar 2026</span><em>Blurred</em></span></button><button class="shot" type="button" aria-pressed="false"><span class="pic"><img src="shots/namaa-snap-may26.png" width="1843" height="433" decoding="async" alt="Snapchat Ads results for Namaa Charity, May 2026"><span class="veil"><b><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>Click to view</b></span></span><span class="cap"><span>Snapchat Ads, May 2026</span><em>Blurred</em></span></button>
+          </div>
+          <details>
+            <summary><span class="plus" aria-hidden="true"></span>How it was done</summary>
+            <ul><li>Rebuilt campaigns from scratch, organized by donation type</li><li>Raised keyword quality and cut irrelevant traffic</li><li>Used Display and YouTube to support Search</li><li>Optimized the donation landing pages</li><li>Shifted budget weekly toward the best-performing campaigns</li></ul>
+          </details>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div>
+          <h3>Fragrance and perfume brand</h3>
+          <div class="meta"><span><b>Market</b> Saudi Arabia</span><span><b>Sector</b> Fragrance e-commerce</span><span><b>Channels</b> Google Ads, Snapchat</span><span><b>Period</b> February 2026</span></div>
+        </div>
+        <div>
+          <p class="summary">A Saudi fragrance store in the February season leading into Ramadan, with Google Ads and Snapchat running side by side.</p>
+          <div class="flow">
+            <div class="stat"><span class="k">Total spend</span><span class="v num" data-to="513.2" data-dec="1" data-prefix="SAR " data-suffix="K">SAR 513.2K</span></div>
+            <div class="flow-line" aria-hidden="true"><i></i></div>
+            <div class="stat"><span class="k">Total sales</span><span class="v num grad" data-to="5.75" data-dec="2" data-prefix="SAR " data-suffix="M">SAR 5.75M</span></div>
+            <div class="stat ret"><span class="k">Combined ROAS</span><span class="v num" data-to="11.21" data-dec="2" data-suffix="×">11.21×</span></div>
+          </div>
+          <div class="tbl-wrap"><table class="plat"><thead><tr><th scope="col">Platform</th><th scope="col">Month</th><th scope="col">Spend</th><th scope="col">Sales</th><th scope="col">ROAS</th></tr></thead><tbody><tr><th scope="row"><i class="dot g" aria-hidden="true"></i>Google Ads</th><td>Feb 2026</td><td class="num">SAR 340K</td><td class="num">SAR 3.62M</td><td class="num roas">1,065.78%</td></tr><tr><th scope="row"><i class="dot s" aria-hidden="true"></i>Snapchat Ads</th><td>Feb 2026</td><td class="num">$46,190.85<small>≈ SAR 173,215.69</small></td><td class="num">$568,218.95<small>≈ SAR 2,130,821.06</small></td><td class="num roas">12.3</td></tr></tbody></table></div>
+          <div class="shots">
+            <button class="shot" type="button" aria-pressed="false"><span class="pic"><img src="shots/perfume-google-feb26.png" width="1047" height="237" decoding="async" alt="Google Ads results for the fragrance brand, February 2026"><span class="veil"><b><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>Click to view</b></span></span><span class="cap"><span>Google Ads, Feb 2026</span><em>Blurred</em></span></button><button class="shot" type="button" aria-pressed="false"><span class="pic"><img src="shots/perfume-snap-feb26.png" width="1861" height="383" decoding="async" alt="Snapchat Ads results for the fragrance brand, February 2026"><span class="veil"><b><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>Click to view</b></span></span><span class="cap"><span>Snapchat Ads, Feb 2026</span><em>Blurred</em></span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div>
+          <h3>Shoes brand</h3>
+          <div class="meta"><span><b>Market</b> Saudi Arabia</span><span><b>Sector</b> Footwear e-commerce</span><span><b>Channels</b> Google Ads, Snapchat</span><span><b>Period</b> January 2026</span></div>
+        </div>
+        <div>
+          <p class="summary">A footwear store selling online in Saudi Arabia, running Google Ads and Snapchat together through January.</p>
+          <div class="flow">
+            <div class="stat"><span class="k">Total spend</span><span class="v num" data-to="191.3" data-dec="1" data-prefix="SAR " data-suffix="K">SAR 191.3K</span></div>
+            <div class="flow-line" aria-hidden="true"><i></i></div>
+            <div class="stat"><span class="k">Total sales</span><span class="v num grad" data-to="1.55" data-dec="2" data-prefix="SAR " data-suffix="M">SAR 1.55M</span></div>
+            <div class="stat ret"><span class="k">Combined ROAS</span><span class="v num" data-to="8.09" data-dec="2" data-suffix="×">8.09×</span></div>
+          </div>
+          <div class="tbl-wrap"><table class="plat"><thead><tr><th scope="col">Platform</th><th scope="col">Month</th><th scope="col">Spend</th><th scope="col">Sales</th><th scope="col">ROAS</th></tr></thead><tbody><tr><th scope="row"><i class="dot g" aria-hidden="true"></i>Google Ads</th><td>Jan 2026</td><td class="num">SAR 140K</td><td class="num">SAR 1.01M</td><td class="num roas">720.30%</td></tr><tr><th scope="row"><i class="dot s" aria-hidden="true"></i>Snapchat Ads</th><td>Jan 2026</td><td class="num">$13,689.41<small>≈ SAR 51,335.29</small></td><td class="num">$143,674.21<small>≈ SAR 538,778.29</small></td><td class="num roas">10.5</td></tr></tbody></table></div>
+          <div class="shots">
+            <button class="shot" type="button" aria-pressed="false"><span class="pic"><img src="shots/shoes-google-jan26.png" width="1176" height="270" decoding="async" alt="Google Ads results for the shoes brand, January 2026"><span class="veil"><b><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>Click to view</b></span></span><span class="cap"><span>Google Ads, Jan 2026</span><em>Blurred</em></span></button><button class="shot" type="button" aria-pressed="false"><span class="pic"><img src="shots/shoes-snap-jan26.png" width="1860" height="364" decoding="async" alt="Snapchat Ads results for the shoes brand, January 2026"><span class="veil"><b><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>Click to view</b></span></span><span class="cap"><span>Snapchat Ads, Jan 2026</span><em>Blurred</em></span></button>
+          </div>
+        </div>
+      </article>
+
+      <article class="case reveal">
+        <div>
+          <h3>Saudi fashion brand</h3>
+          <div class="meta"><span><b>Market</b> Saudi Arabia</span><span><b>Sector</b> Fashion e-commerce</span><span><b>Channels</b> Google Ads, Snapchat</span><span><b>Period</b> December 2025</span></div>
+        </div>
+        <div>
+          <p class="summary">A Saudi fashion store through the December season, with a full funnel from first view to purchase and weekly creative testing.</p>
+          <div class="flow">
+            <div class="stat"><span class="k">Total spend</span><span class="v num" data-to="92.9" data-dec="1" data-prefix="SAR " data-suffix="K">SAR 92.9K</span></div>
+            <div class="flow-line" aria-hidden="true"><i></i></div>
+            <div class="stat"><span class="k">Total sales</span><span class="v num grad" data-to="960.1" data-dec="1" data-prefix="SAR " data-suffix="K">SAR 960.1K</span></div>
+            <div class="stat ret"><span class="k">Combined ROAS</span><span class="v num" data-to="10.34" data-dec="2" data-suffix="×">10.34×</span></div>
+          </div>
+          <div class="tbl-wrap"><table class="plat"><thead><tr><th scope="col">Platform</th><th scope="col">Month</th><th scope="col">Spend</th><th scope="col">Sales</th><th scope="col">ROAS</th></tr></thead><tbody><tr><th scope="row"><i class="dot g" aria-hidden="true"></i>Google Ads</th><td>Dec 2025</td><td class="num">SAR 69.2K</td><td class="num">SAR 746K</td><td class="num roas">1,079.17%</td></tr><tr><th scope="row"><i class="dot s" aria-hidden="true"></i>Snapchat Ads</th><td>Dec 2025</td><td class="num">$6,314.84<small>≈ SAR 23,680.65</small></td><td class="num">$57,087.90<small>≈ SAR 214,079.62</small></td><td class="num roas">9.04</td></tr></tbody></table></div>
+          <div class="shots">
+            <button class="shot" type="button" aria-pressed="false"><span class="pic"><img src="shots/fashion-google-dec25.png" width="1178" height="276" decoding="async" alt="Google Ads results for the fashion brand, December 2025"><span class="veil"><b><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>Click to view</b></span></span><span class="cap"><span>Google Ads, Dec 2025</span><em>Blurred</em></span></button><button class="shot" type="button" aria-pressed="false"><span class="pic"><img src="shots/fashion-snap-dec25.png" width="1838" height="482" decoding="async" alt="Snapchat Ads results for the fashion brand, December 2025"><span class="veil"><b><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"/><circle cx="12" cy="12" r="3"/></svg>Click to view</b></span></span><span class="cap"><span>Snapchat Ads, Dec 2025</span><em>Blurred</em></span></button>
+          </div>
+          <details>
+            <summary><span class="plus" aria-hidden="true"></span>How it was done</summary>
+            <ul><li>Rebuilt the account structure from scratch</li><li>New creative angles with multiple hooks tested</li><li>Full funnel from first view to purchase</li><li>Broad targeting layered with interests</li><li>Better product pages and add-to-cart rate</li><li>Weekly creative testing to find winners</li></ul>
+          </details>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="exp" id="experience">
+    <div class="wrap">
+      <h2 class="section-title reveal">Experience</h2>
+      <p class="lede reveal">From buying media for a single large account to overseeing a team and 20+ accounts, then working directly with brands.</p>
+      <div class="timeline">
+        <div class="job reveal">
+          <p class="when"><b>Oct 2025 to now</b>Remote</p>
+          <div class="body">
+            <h3>Freelance Performance Marketer / Media Buyer</h3>
+            <p class="co">Direct clients</p>
+            <ul>
+              <li>Managed SAR 10M in ad spend over 10 months for a Saudi charity driving website donations, across TikTok, Google Ads and Snapchat.</li>
+              <li>Built media buying strategies on Google Ads (Search, Performance Max), Meta, TikTok, LinkedIn and Snapchat for e-commerce, healthcare, travel and services clients in Arab, European and US markets.</li>
+              <li>Set up and audited conversion tracking with Google Tag Manager, Meta Pixel, Conversions API and GA4.</li>
+              <li>Delivered monthly reports with ROAS, CPA and CPL analysis and clear next steps.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="job reveal">
+          <p class="when"><b>Sep 2025 to Jul 2026</b>AZZRK</p>
+          <div class="body">
+            <h3>Team Leader, Media Buying</h3>
+            <p class="co">AZZRK</p>
+            <ul>
+              <li>Oversaw $50K+ in monthly ad spend across 20+ client accounts on Meta, TikTok and Google Ads, moving budget daily toward the best performers.</li>
+              <li>Introduced a standard testing framework for creatives and audiences that raised ROAS and lowered CPA.</li>
+              <li>Led and mentored 4 to 6 media buyers: KPIs, account-level feedback and onboarding.</li>
+              <li>Delivered weekly and monthly reports to management and clients with recommended actions.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="job reveal">
+          <p class="when"><b>2023 to Sep 2025</b>AZZRK</p>
+          <div class="body">
+            <h3>Media Buyer</h3>
+            <p class="co">AZZRK</p>
+            <ul>
+              <li>Ran SAR 20K to 60K a month for the agency's largest client, driving traffic and sales on Meta, TikTok and Instagram against ROI targets.</li>
+              <li>Improved efficiency by optimizing targeting, bids and creatives from analytics.</li>
+              <li>Built campaign strategies from audience and competitor research.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <div class="wrap">
+      <h2 class="section-title reveal">Skills and tools</h2>
+      <div class="skill-grid stagger">
+        <div>
+          <h3>Ad platforms</h3>
+          <ul><li>Meta Ads (Facebook, Instagram)</li><li>TikTok Ads</li><li>Google Ads: Search, Performance Max, Display, YouTube</li><li>Snapchat Ads</li><li>LinkedIn Ads</li></ul>
+        </div>
+        <div>
+          <h3>Tracking and analytics</h3>
+          <ul><li>Google Tag Manager</li><li>Google Analytics 4</li><li>Meta Pixel and Conversions API</li><li>Google Search Console</li><li>Conversion tracking audits</li></ul>
+        </div>
+        <div>
+          <h3>Strategy</h3>
+          <ul><li>Full-funnel campaign planning</li><li>Creative strategy and ad angles</li><li>A/B and creative testing</li><li>Budget allocation and scaling</li><li>WhatsApp sales funnels</li><li>Landing page optimization</li></ul>
+        </div>
+        <div>
+          <h3>Reporting and teams</h3>
+          <ul><li>ROAS, CPA and CPL reporting</li><li>Excel and Google Sheets</li><li>KPI setting</li><li>Mentoring and onboarding buyers</li><li>Working with account managers</li></ul>
+        </div>
+      </div>
+      <div class="creds stagger">
+        <div class="cred">
+          <h3>Certification</h3>
+          <p>Google Ads Search, Skillshop</p>
+          <p>Courses: SEMrush keyword research, Hive retention marketing, Meta crash course, growth hacking</p>
+        </div>
+        <div class="cred">
+          <h3>Education</h3>
+          <p>Business Information Systems (BIS)</p>
+          <p>Faculty of BIS, 2018 to 2022</p>
+        </div>
+        <div class="cred">
+          <h3>Languages</h3>
+          <p>Arabic, native</p>
+          <p>English, professional</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <p class="eyebrow"><i aria-hidden="true"></i>Get in touch</p>
+        <h2>Have an account that should be scaling, not just spending?</h2>
+        <p class="lede">Open to senior media buying roles and freelance work with brands in Saudi Arabia, the GCC and Egypt. Send the platform, market and rough monthly spend, and Gamal will reply with next steps.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:gamalwalid2213@gmail.com">Email Gamal <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn-ghost" href="https://wa.me/201044272911">WhatsApp Gamal <span class="arr" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <dl class="contact-list stagger">
+        <div class="row"><dt>Email</dt><dd><a href="mailto:gamalwalid2213@gmail.com">gamalwalid2213@gmail.com</a></dd></div>
+        <div class="row"><dt>WhatsApp</dt><dd><a class="num" href="https://wa.me/201044272911">+20 104 427 2911</a></dd></div>
+        <div class="row"><dt>Based in</dt><dd>Egypt, working remotely across the GCC</dd></div>
+        <div class="row"><dt>Available for</dt><dd>Full-time roles and freelance work</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Gamal Walid</span>
+    <a href="#top">Back to top</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var AR={"Gamal Walid": "جمال وليد", "Work": "الأعمال", "Experience": "الخبرات", "Skills": "المهارات", "Contact": "تواصل", "Work with Gamal": "اعمل مع جمال", "Open to remote and GCC roles": "متاح للعمل عن بُعد وفي دول الخليج", "Gamal": "جمال", "Walid": "وليد", "Senior Performance Media Buyer, E-commerce": "ميديا باير أول، متخصص في الأداء والتجارة الإلكترونية", "I plan, launch and scale paid campaigns on Meta, TikTok, Google, Snapchat and LinkedIn for brands in Saudi Arabia, the Gulf and Egypt, with the tracking set up properly so every riyal and pound can be measured.": "أخطط وأطلق وأوسّع الحملات الإعلانية المدفوعة على Meta وTikTok وGoogle وSnapchat وLinkedIn لعلامات تجارية في السعودية والخليج ومصر، مع إعداد التتبع بشكل صحيح ليُقاس كل ريال وكل جنيه.", "See results": "شاهد النتائج", "Get in touch": "تواصل معي", "Namaa Charity, Saudi Arabia.": "جمعية نماء الخيرية، السعودية.", "Google Ads, TikTok and Snapchat combined, March and May 2026.": "Google Ads وTikTok وSnapchat مجتمعة، مارس ومايو 2026.", "Total spend": "إجمالي الصرف", "Donations raised": "التبرعات المحققة", "Combined ROAS": "ROAS الإجمالي", "running paid media, 2 to 3 of them in e-commerce": "في إدارة الإعلانات المدفوعة، منها 2 إلى 3 سنوات في التجارة الإلكترونية", "client accounts managed at once": "حساب عميل في نفس الوقت", "monthly ad spend overseen across accounts": "صرف إعلاني شهري تحت الإشراف عبر الحسابات", "ad platforms, from Meta and TikTok to LinkedIn": "منصات إعلانية، من Meta وTikTok إلى LinkedIn", "WhatsApp funnels": "قمع مبيعات واتساب", "Selected work": "أعمال مختارة", "Four brands across charity, fashion, fragrance and footwear. The numbers on each brand are the totals of its screenshots, with the ROAS for each platform exactly as the platform reports it. Google Ads and TikTok report in Saudi riyals and Snapchat in US dollars; totals are in riyals, with dollars converted at the fixed rate of 3.75 SAR. Click a screenshot to see it, and click again to blur it.": "أربع علامات تجارية في العمل الخيري والعطور والأحذية والأزياء. أرقام كل علامة هي مجموع لقطات الشاشة الخاصة بها، وROAS كل منصة مكتوب كما تعرضه المنصة نفسها. Google Ads وTikTok بالريال السعودي وSnapchat بالدولار الأمريكي، والإجماليات بالريال بعد تحويل الدولار بالسعر الثابت 3.75 ريال. اضغط على أي لقطة لعرضها، واضغط مرة أخرى لإخفائها.", "Namaa Charity": "جمعية نماء الخيرية", "Market": "السوق", "Saudi Arabia": "السعودية", "Sector": "القطاع", "Nonprofit donations": "تبرعات خيرية", "Channels": "القنوات", "Google Ads, TikTok, Snapchat": "Google Ads، TikTok، Snapchat", "Period": "الفترة", "March and May 2026": "مارس ومايو 2026", "Donation campaigns for a Saudi charity through Ramadan, Zakat al-Fitr and Eid al-Adha. The account was rebuilt by donation type, and budget moved weekly toward the campaigns bringing in the most donations.": "حملات تبرعات لجمعية سعودية خلال رمضان وزكاة الفطر وعيد الأضحى. أُعيد بناء الحساب حسب نوع التبرع، ونُقلت الميزانية أسبوعيًا إلى الحملات الأعلى في التبرعات.", "Total donations": "إجمالي التبرعات", "Platform": "المنصة", "Month": "الشهر", "Spend": "الصرف", "Donations": "التبرعات", "Mar 2026": "مارس 2026", "May 2026": "مايو 2026", "Feb 2026": "فبراير 2026", "Jan 2026": "يناير 2026", "Dec 2025": "ديسمبر 2025", "Click to view": "اضغط للعرض", "Google Ads, Mar 2026": "Google Ads، مارس 2026", "TikTok Ads, Mar 2026": "TikTok Ads، مارس 2026", "Snapchat Ads, May 2026": "Snapchat Ads، مايو 2026", "Google Ads, Feb 2026": "Google Ads، فبراير 2026", "Snapchat Ads, Feb 2026": "Snapchat Ads، فبراير 2026", "Google Ads, Jan 2026": "Google Ads، يناير 2026", "Snapchat Ads, Jan 2026": "Snapchat Ads، يناير 2026", "Google Ads, Dec 2025": "Google Ads، ديسمبر 2025", "Snapchat Ads, Dec 2025": "Snapchat Ads، ديسمبر 2025", "How it was done": "كيف تم العمل", "Rebuilt campaigns from scratch, organized by donation type": "إعادة بناء الحملات من الصفر وتنظيمها حسب نوع التبرع", "Raised keyword quality and cut irrelevant traffic": "رفع جودة الكلمات المفتاحية وتقليل الزيارات غير المناسبة", "Used Display and YouTube to support Search": "استخدام Display وYouTube لدعم حملات البحث", "Optimized the donation landing pages": "تحسين صفحات التبرع", "Shifted budget weekly toward the best-performing campaigns": "نقل الميزانية أسبوعيًا إلى الحملات الأفضل أداءً", "Fragrance and perfume brand": "علامة عطور", "Fragrance e-commerce": "تجارة إلكترونية للعطور", "Google Ads, Snapchat": "Google Ads، Snapchat", "February 2026": "فبراير 2026", "A Saudi fragrance store in the February season leading into Ramadan, with Google Ads and Snapchat running side by side.": "متجر عطور سعودي في موسم فبراير قبل رمضان، مع تشغيل Google Ads وSnapchat جنبًا إلى جنب.", "Total sales": "إجمالي المبيعات", "Sales": "المبيعات", "Shoes brand": "علامة أحذية", "Footwear e-commerce": "تجارة إلكترونية للأحذية", "January 2026": "يناير 2026", "A footwear store selling online in Saudi Arabia, running Google Ads and Snapchat together through January.": "متجر أحذية يبيع أونلاين في السعودية، مع تشغيل Google Ads وSnapchat معًا خلال يناير.", "Saudi fashion brand": "علامة أزياء سعودية", "Fashion e-commerce": "تجارة إلكترونية للأزياء", "December 2025": "ديسمبر 2025", "A Saudi fashion store through the December season, with a full funnel from first view to purchase and weekly creative testing.": "متجر أزياء سعودي خلال موسم ديسمبر، مع قمع تسويقي كامل من أول مشاهدة حتى الشراء واختبار أسبوعي للإعلانات.", "Rebuilt the account structure from scratch": "إعادة بناء هيكل الحساب من الصفر", "New creative angles with multiple hooks tested": "زوايا إعلانية جديدة مع اختبار أكثر من Hook", "Full funnel from first view to purchase": "قمع كامل من أول مشاهدة حتى الشراء", "Broad targeting layered with interests": "استهداف واسع مع طبقات من الاهتمامات", "Better product pages and add-to-cart rate": "تحسين صفحات المنتجات ومعدل الإضافة للسلة", "Weekly creative testing to find winners": "اختبار أسبوعي للإعلانات لاكتشاف الأفضل", "From buying media for a single large account to overseeing a team and 20+ accounts, then working directly with brands.": "من إدارة الإعلانات لحساب كبير واحد، إلى الإشراف على فريق وأكثر من 20 حسابًا، ثم العمل مباشرة مع العلامات التجارية.", "Oct 2025 to now": "أكتوبر 2025 حتى الآن", "Remote": "عن بُعد", "Freelance Performance Marketer / Media Buyer": "مسوّق أداء / ميديا باير مستقل", "Direct clients": "عملاء مباشرون", "Managed SAR 10M in ad spend over 10 months for a Saudi charity driving website donations, across TikTok, Google Ads and Snapchat.": "إدارة صرف إعلاني بقيمة 10 ملايين ريال على مدار 10 أشهر لجمعية سعودية لزيادة التبرعات عبر الموقع، على TikTok وGoogle Ads وSnapchat.", "Built media buying strategies on Google Ads (Search, Performance Max), Meta, TikTok, LinkedIn and Snapchat for e-commerce, healthcare, travel and services clients in Arab, European and US markets.": "بناء استراتيجيات إعلانية على Google Ads (Search وPerformance Max) وMeta وTikTok وLinkedIn وSnapchat لعملاء في التجارة الإلكترونية والرعاية الصحية والسفر والخدمات في الأسواق العربية والأوروبية والأمريكية.", "Set up and audited conversion tracking with Google Tag Manager, Meta Pixel, Conversions API and GA4.": "إعداد ومراجعة تتبع التحويلات باستخدام Google Tag Manager وMeta Pixel وConversions API وGA4.", "Delivered monthly reports with ROAS, CPA and CPL analysis and clear next steps.": "تقارير شهرية بتحليل ROAS وCPA وCPL وخطوات واضحة للمرحلة التالية.", "Sep 2025 to Jul 2026": "سبتمبر 2025 حتى يوليو 2026", "Team Leader, Media Buying": "قائد فريق الميديا باينج", "Oversaw $50K+ in monthly ad spend across 20+ client accounts on Meta, TikTok and Google Ads, moving budget daily toward the best performers.": "الإشراف على صرف إعلاني شهري يتجاوز 50 ألف دولار عبر أكثر من 20 حساب عميل على Meta وTikTok وGoogle Ads، مع نقل الميزانية يوميًا إلى الأفضل أداءً.", "Introduced a standard testing framework for creatives and audiences that raised ROAS and lowered CPA.": "وضع إطار اختبار موحّد للإعلانات والجماهير رفع ROAS وخفّض CPA.", "Led and mentored 4 to 6 media buyers: KPIs, account-level feedback and onboarding.": "قيادة وتوجيه من 4 إلى 6 ميديا باير: مؤشرات الأداء، ومتابعة كل حساب، وتأهيل الأعضاء الجدد.", "Delivered weekly and monthly reports to management and clients with recommended actions.": "تقارير أسبوعية وشهرية للإدارة والعملاء مع الإجراءات المقترحة.", "2023 to Sep 2025": "2023 حتى سبتمبر 2025", "Media Buyer": "ميديا باير", "Ran SAR 20K to 60K a month for the agency's largest client, driving traffic and sales on Meta, TikTok and Instagram against ROI targets.": "إدارة صرف شهري من 20 إلى 60 ألف ريال لأكبر عميل في الوكالة، لزيادة الزيارات والمبيعات على Meta وTikTok وInstagram وفق أهداف العائد.", "Improved efficiency by optimizing targeting, bids and creatives from analytics.": "رفع الكفاءة بتحسين الاستهداف والمزايدات والإعلانات بناءً على البيانات.", "Built campaign strategies from audience and competitor research.": "بناء استراتيجيات الحملات من أبحاث الجمهور والمنافسين.", "Skills and tools": "المهارات والأدوات", "Ad platforms": "المنصات الإعلانية", "Meta Ads (Facebook, Instagram)": "Meta Ads (فيسبوك وإنستجرام)", "Tracking and analytics": "التتبع والتحليلات", "Meta Pixel and Conversions API": "Meta Pixel وConversions API", "Conversion tracking audits": "مراجعة تتبع التحويلات", "Strategy": "الاستراتيجية", "Full-funnel campaign planning": "تخطيط حملات القمع الكامل", "Creative strategy and ad angles": "استراتيجية المحتوى الإعلاني وزوايا الرسائل", "A/B and creative testing": "اختبارات A/B واختبار الإعلانات", "Budget allocation and scaling": "توزيع الميزانية والتوسّع", "WhatsApp sales funnels": "قمع مبيعات واتساب", "Landing page optimization": "تحسين صفحات الهبوط", "Reporting and teams": "التقارير والفرق", "ROAS, CPA and CPL reporting": "تقارير ROAS وCPA وCPL", "Excel and Google Sheets": "Excel وGoogle Sheets", "KPI setting": "تحديد مؤشرات الأداء", "Mentoring and onboarding buyers": "توجيه وتأهيل الميديا باير", "Working with account managers": "العمل مع مديري الحسابات", "Certification": "الشهادات", "Courses: SEMrush keyword research, Hive retention marketing, Meta crash course, growth hacking": "دورات: أبحاث الكلمات المفتاحية من SEMrush، تسويق الاحتفاظ بالعملاء من Hive، دورة Meta المكثفة، Growth Hacking", "Education": "التعليم", "Business Information Systems (BIS)": "نظم معلومات الأعمال (BIS)", "Faculty of BIS, 2018 to 2022": "كلية نظم معلومات الأعمال، 2018 إلى 2022", "Languages": "اللغات", "Arabic, native": "العربية، اللغة الأم", "English, professional": "الإنجليزية، مستوى احترافي", "Have an account that should be scaling, not just spending?": "لديك حساب يجب أن ينمو، لا أن يصرف فقط؟", "Open to senior media buying roles and freelance work with brands in Saudi Arabia, the GCC and Egypt. Send the platform, market and rough monthly spend, and Gamal will reply with next steps.": "متاح لوظائف الميديا باينج المتقدمة وللعمل الحر مع علامات تجارية في السعودية والخليج ومصر. أرسل المنصة والسوق والصرف الشهري التقريبي، وسيرد جمال بالخطوات التالية.", "Email Gamal": "راسل جمال بالإيميل", "WhatsApp Gamal": "واتساب جمال", "Email": "البريد الإلكتروني", "WhatsApp": "واتساب", "Based in": "المقر", "Egypt, working remotely across the GCC": "مصر، ويعمل عن بُعد مع دول الخليج", "Available for": "متاح لـ", "Full-time roles and freelance work": "وظائف بدوام كامل وعمل حر", "© 2026 Gamal Walid": "© 2026 جمال وليد", "Back to top": "العودة للأعلى"};
+  var UI={en:{blurred:'Blurred',hide:'Click to blur',show:'Show screenshot: ',blur:'Blur screenshot: ',btn:'التبديل إلى العربية',title:'Gamal Walid | Performance Media Buyer'},
+          ar:{blurred:'مخفية',hide:'اضغط للإخفاء',show:'عرض اللقطة: ',blur:'إخفاء اللقطة: ',btn:'Switch to English',title:'جمال وليد | ميديا باير'}};
+  var lang='en', orig=new WeakMap(), root=document.documentElement;
+  function norm(t){return t.replace(/\s+/g,' ').trim();}
+  function textNodes(){
+    var out=[],w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,{acceptNode:function(n){
+      var p=n.parentNode&&n.parentNode.nodeName;return (p==='SCRIPT'||p==='STYLE'||!n.nodeValue.trim())?NodeFilter.FILTER_REJECT:NodeFilter.FILTER_ACCEPT;}});
+    while(w.nextNode())out.push(w.currentNode);return out;
+  }
+  function capText(b){var s=b.querySelector('.cap span');return s?s.textContent:'';}
+  function setShot(b){
+    var open=b.classList.contains('open'),u=UI[lang];
+    b.querySelector('.cap em').textContent=open?u.hide:u.blurred;
+    b.setAttribute('aria-label',(open?u.blur:u.show)+capText(b));
+  }
+  function fmt(el){
+    var ar=lang==='ar',to=parseFloat(el.getAttribute('data-to')),dec=+(el.getAttribute('data-dec')||0),
+        pre=(ar&&el.getAttribute('data-prefix-ar'))||el.getAttribute('data-prefix')||'',
+        suf=(ar&&el.getAttribute('data-suffix-ar'))||el.getAttribute('data-suffix')||'';
+    return {to:to,dec:dec,pre:pre,suf:suf};
+  }
+  function applyLang(l){
+    lang=l; var ar=l==='ar';
+    root.lang=l; root.dir=ar?'rtl':'ltr';
+    textNodes().forEach(function(n){
+      if(!orig.has(n))orig.set(n,n.nodeValue);
+      var o=orig.get(n),k=norm(o);
+      if(ar&&AR[k]){var lead=o.match(/^\s*/)[0],trail=o.match(/\s*$/)[0];n.nodeValue=lead+AR[k]+trail;}
+      else n.nodeValue=o;
+    });
+    document.querySelectorAll('[data-to]').forEach(function(el){
+      if(!el.dataset.done&&root.classList.contains('js'))return;
+      var f=fmt(el);el.textContent=f.pre+f.to.toFixed(f.dec)+f.suf;
+    });
+    document.querySelectorAll('.shot').forEach(setShot);
+    document.getElementById('lang').setAttribute('aria-label',UI[l].btn);
+    document.title=UI[l].title;
+    try{localStorage.setItem('gw-lang',l);}catch(e){}
+  }
+
+  // Screenshots: click to reveal, click again to blur
+  document.querySelectorAll('.shot').forEach(function(b){
+    setShot(b);
+    b.addEventListener('click',function(){
+      var open=b.classList.toggle('open');
+      b.setAttribute('aria-pressed',open?'true':'false');
+      setShot(b);
+    });
+  });
+
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var motion=!reduce&&('IntersectionObserver' in window);
+
+  document.getElementById('lang').addEventListener('click',function(){
+    if(motion){document.body.classList.remove('switching');void document.body.offsetWidth;document.body.classList.add('switching');}
+    applyLang(lang==='en'?'ar':'en');
+  });
+
+  if(motion){
+    root.classList.add('js');
+    var hero=document.getElementById('hero');
+    hero.addEventListener('pointermove',function(e){
+      var r=hero.getBoundingClientRect();
+      hero.style.setProperty('--mx',(e.clientX-r.left)+'px');
+      hero.style.setProperty('--my',(e.clientY-r.top)+'px');
+    });
+    var count=function(el){
+      if(el.dataset.done)return;el.dataset.done='1';
+      var t0=null,dur=1500;
+      function step(t){if(!t0)t0=t;var f=fmt(el),k=Math.min(1,(t-t0)/dur),e=1-Math.pow(1-k,3);
+        el.textContent=f.pre+(f.to*e).toFixed(f.dec)+f.suf;if(k<1)requestAnimationFrame(step);}
+      requestAnimationFrame(step);
+    };
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(!e.isIntersecting)return;
+        e.target.classList.add('in');
+        e.target.querySelectorAll('[data-to]').forEach(count);
+        io.unobserve(e.target);
+      });
+    },{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal,.stagger,.signature').forEach(function(el){io.observe(el)});
+  }
+
+  var saved=null;try{saved=localStorage.getItem('gw-lang');}catch(e){}
+  if(saved==='ar')applyLang('ar');
+})();
+</script>
+</body>
+</html>
